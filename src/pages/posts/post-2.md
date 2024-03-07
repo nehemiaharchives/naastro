@@ -7,7 +7,7 @@ author: 'Hokuto Joel Ide'
 image:
     url: 'https://media.licdn.com/dms/image/C4D22AQEvyV--2rMTEQ/feedshare-shrink_2048_1536/0/1621620992091?e=1712793600&v=beta&t=uxDdp6H_DBsoNNdD0ctGAS4Xhdlyg2MmzRRopU-F9ZA'
     alt: 'Hokuto Joel Ide'
-tags: ["blog", "aboutme", "datajournalism"]
+tags: ["aboutme","tech", "datajournalism"]
 ---
 
 Greetings from the eidtor in chief. 
