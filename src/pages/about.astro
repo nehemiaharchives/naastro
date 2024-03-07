@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "About Nehemiah Archives";
+const pageTitle = "About Me";
 const identity = {
     firstName: "Hokuto",
+    religion: "Evangelical Christian",
     country: "Japan",
     occupation: "Evangelical Data Journalist"    
 };
@@ -17,10 +18,14 @@ const languages = new Map([
 ]);
 ---
 <BaseLayout pageTitle={pageTitle}>
+
+    <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t31.18172-8/13244224_1101388796566364_6998049430149732507_o.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-j70V7_QDFkAX-Als6q&_nc_ht=scontent-itm1-1.xx&oh=00_AfD4mvDPoMcA_EVCrmKaObiorF2UcFrCGfZhnvZNnEyTLQ&oe=66115A41" width="600px" />
+
     <p class="bold">Few Facts:</p>
     <ul>
         <li>My name is <span class="bold">{identity.firstName} Ide</span>, also known as <span class="bold">Joel</span>.</li>
-        <li>I live in <span class="bold">{identity.country}</span>. Lived in <span class="bold">US</span> around 10 years ({livedIn.map((city) => city + ", ")} etc)</li>
+        <li>I am an <span class="bold">{identity.religion}</span> converted from Atheist.</li>
+        <li>I live in <span class="bold">{identity.country}</span>. Lived in <span class="bold">US</span> around 10 years ({livedIn.map((city) => city + ", ")} etc).</li>
         <li>I work as <span class="bold">{identity.occupation}</span>.</li>
     </ul>
 
