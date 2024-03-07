@@ -1,16 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'A Testimony: My Salvation, Calling, and Ministry'
-pubDate: 
+pubDate: December 25th, 2019
 description: 'How I was sved by Jesus Christ, How I was called by God, and How I am led by Holy Spirit.'
 author: 'Hokuto Joel Ide'
 image:
     url: 'https://1.bp.blogspot.com/-BizQiIHh_4A/XgNFRqJJIKI/AAAAAAAAASI/yCHVf8Tor_or3Gxdv3UXlu31ECqG8PBUwCEwYBhgL/s400/ide2.jpg'
     alt: 'Hokuto Joel Ide'
 tags: ["blog", "aboutme"]
----
-# A Testimony: My Salvation, Calling, and Ministry
-
-Post Date: December 25th, 2019
+--- 
 
 "You used to be a reporter for Christianity Today Japan. You are also a grandstudent of Dr. Takeo Miyamura, who was the editor-in-chief. Would you be willing to succeed Dr. Miyamura as editor-in-chief?"
 

@@ -1,8 +1,5 @@
 ---
-import '../styles/global.css'
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About Nehemiah Archives";
 const identity = {
     firstName: "Hokuto",
@@ -17,46 +14,21 @@ const languages = new Map([
     ["English", "Business and Academic level of fluency in speaking, listening, reading and writing, specialized in Christianity and Tech area"]
 ]);
 ---
+<BaseLayout pageTitle={pageTitle}>
+    <p class="bold">Few Facts:</p>
+    <ul>
+        <li>My name is <span class="bold">{identity.firstName} Ide</span>, also known as <span class="bold">Joel</span>.</li>
+        <li>I live in <span class="bold">{identity.country}</span>.</li>
+        <li>I work as <span class="bold">{identity.occupation}</span>.</li>
+    </ul>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-        <style>
-            p {
-                font-weight: bold;
-            }
-            .bold {
-                font-weight: bold;
-            }            
-        </style>
-	</head>
-	<body>
-        <Header />
+    <p class="bold">Skills & Experience:</p>
+    <ul>
+        {skills.map((skill) => <li>{skill}</li> )}
+    </ul>
 
-		<h1>{pageTitle}</h1>
-
-        <p>Here is few facts on me:</p>
-        <ul>
-            <li>My name is <span class="bold">{identity.firstName} Ide</span>, also known as <span class="bold">Joel</span>.</li>
-            <li>I live in {identity.country}, I work as {identity.occupation}.</li>      
-        </ul>
-
-        <p>My skills are following:</p>
-        <ul>
-            {skills.map((skill) => <li>{skill}</li> )}
-        </ul>
-
-        <p>Language fluency:</p>
-        <ul>
-            {Array.from(languages).map((language) => <li><span class="bold">{language[0]}:</span> <br>&emsp;{language[1]}</li> )}
-        </ul>
-        <Footer />
-        <script>
-            import "../scripts/menu.js"
-        </script>
-	</body>
-</html>
+    <p class="bold">Language & Fluency:</p>
+    <ul>
+        {Array.from(languages).map((language) => <li><span class="bold">{language[0]}:</span> <br>&emsp;{language[1]}</li> )}
+    </ul>
+</BaseLayout>
