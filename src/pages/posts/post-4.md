@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Christians and Newly Appointed Prime Minister of Japan, Yoshihide Suga'
 pubDate: September 15, 2020
-description: 'How I felt in Veterans Day as a Japanese, as a Father to an American Son'
+description: 'Geopolitical thought in relating with hybrid warfare and Christianity around Japan'
 author: 'Hokuto Joel Ide'
 image: 
     url: 'https://media.licdn.com/dms/image/C4E12AQGXrFANVC-bZQ/article-cover_image-shrink_720_1280/0/1600131422431?e=1715212800&v=beta&t=LhJ58Xouti5_Kl3tsf7wQ4P6pum-DxG_Pnc0e8679sg'
