@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "About Nehemiah Archives";
 const identity = {
@@ -53,5 +54,6 @@ const languages = new Map([
         <ul>
             {Array.from(languages).map((language) => <li><span class="bold">{language[0]}:</span> <br>&emsp;{language[1]}</li> )}
         </ul>
+        <Footer />
 	</body>
 </html>
