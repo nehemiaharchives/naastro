@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'A Testimony: My Salvation, Calling, and Ministry'
+title: 'Salvation, Calling, and Ministry'
 pubDate: December 25th, 2019
 description: 'How I was sved by Jesus Christ, How I was called by God, and How I am led by Holy Spirit.'
 author: 'Hokuto Joel Ide'

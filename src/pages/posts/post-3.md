@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Veterans Day, in Case of My Family'
 pubDate: November 11th, 2021
-description: 'How I felt in Veterans Day as a Japanese, as a Father to an American Son'
+description: 'Veterans Day as a Japanese Father of American Son'
 author: 'Hokuto Joel Ide'
 image: 
     url: 'https://drfc-ob.com/wp/wp-content/uploads/2017/09/73b8622a311de59ee962ab2a5ca3d11c.bmp'

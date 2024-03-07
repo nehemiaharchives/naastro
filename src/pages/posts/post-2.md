@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Church & Station: Pioneering Japan Mssion and Christian Journalism with Information Technology'
+title: 'Pioneering Mssion and Christian Journalism'
 pubDate: May 21st, 2021
 description: 'A journey to invent mission map visualizing unreached area in Japan with means of data journalism'
 author: 'Hokuto Joel Ide'

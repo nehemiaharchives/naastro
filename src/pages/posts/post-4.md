@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Christians and Newly Appointed Prime Minister of Japan, Yoshihide Suga'
+title: 'Christians and New PM of Japan'
 pubDate: September 15, 2020
 description: 'Geopolitical thought in relating with hybrid warfare and Christianity around Japan'
 author: 'Hokuto Joel Ide'
