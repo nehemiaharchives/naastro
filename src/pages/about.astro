@@ -1,17 +1,19 @@
 ---
-const pageTitle = "About Nehemiah Archives"
+import '../styles/global.css'
+
+const pageTitle = "About Nehemiah Archives";
 const identity = {
     firstName: "Hokuto",
     country: "Japan",
     occupation: "Evangelical Data Journalist"    
-}
+};
 
 const skills = ["Kotlin Programming Language", "Neo4j Graph Database", "Devops", "Christian Journalism"]
 const languages = new Map([
     ["Japanese", "Native"],
     ["Korean", "Native in Speaking and Listening in Christianity and Tech Vocabulary, biguineer in reading and writing"],
     ["English", "Business and Academic level of fluency in speaking, listening, reading and writing, specialized in Christianity and Tech area"]
-])
+]);
 ---
 
 <html lang="en">
@@ -21,6 +23,14 @@ const languages = new Map([
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+        <style>
+            p {
+                font-weight: bold;
+            }
+            .bold {
+                font-weight: bold;
+            }            
+        </style>
 	</head>
 	<body>
         <a href="/">Home</a>
@@ -31,7 +41,7 @@ const languages = new Map([
 
         <p>Here is few facts on me:</p>
         <ul>
-            <li>My name is {identity.firstName} Ide, also known as Joel.</li>
+            <li>My name is <span class="bold">{identity.firstName} Ide</span>, also known as <span class="bold">Joel</span>.</li>
             <li>I live in {identity.country}, I work as {identity.occupation}.</li>      
         </ul>
 
@@ -42,7 +52,7 @@ const languages = new Map([
 
         <p>Language fluency:</p>
         <ul>
-            {Array.from(languages).map((language) => <li>{language[0]}: <br>&emsp;{language[1]}</li> )}
+            {Array.from(languages).map((language) => <li><span class="bold">{language[0]}:</span> <br>&emsp;{language[1]}</li> )}
         </ul>
 	</body>
 </html>
