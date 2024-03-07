@@ -1,5 +1,17 @@
 ---
+const pageTitle = "About Nehemiah Archives"
+const identity = {
+    firstName: "Hokuto",
+    country: "Japan",
+    occupation: "Evangelical Data Journalist"    
+}
 
+const skills = ["Kotlin Programming Language", "Neo4j Graph Database", "Devops", "Christian Journalism"]
+const languages = new Map([
+    ["Japanese", "Native"],
+    ["Korean", "Native in Speaking and Listening in Christianity and Tech Vocabulary, biguineer in reading and writing"],
+    ["English", "Business and Academic level of fluency in speaking, listening, reading and writing, specialized in Christianity and Tech area"]
+])
 ---
 
 <html lang="en">
@@ -8,15 +20,29 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About Nehemiah Archives</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
 
-		<h1>About Nehemiah Archives</h1>
+		<h1>{pageTitle}</h1>
 
-        <p>This is a blog of Hokuto Ide, also known as Joel.</p>
+        <p>Here is few facts on me:</p>
+        <ul>
+            <li>My name is {identity.firstName} Ide, also known as Joel.</li>
+            <li>I live in {identity.country}, I work as {identity.occupation}.</li>      
+        </ul>
+
+        <p>My skills are following:</p>
+        <ul>
+            {skills.map((skill) => <li>{skill}</li> )}
+        </ul>
+
+        <p>Language fluency:</p>
+        <ul>
+            {Array.from(languages).map((language) => <li>{language[0]}: <br>&emsp;{language[1]}</li> )}
+        </ul>
 	</body>
 </html>
